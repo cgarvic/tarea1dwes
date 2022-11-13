@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Ejercicio 5</title>
+  </head>
+
+  <body>
+    <nav class="flex w-screen mb-1">
+      <div
+        class="mx-auto bg-white px-8 py-2 text-center text-xl font-bold space-x-6 rounded-3xl border-4 border-blue-600 text-blue-600"
+      >
+        <a href="/gar_vic_car/1/index.html">1</a>
+        <a href="/gar_vic_car/2/index.html">2</a>
+        <a href="/gar_vic_car/3/a/index.php">3a</a>
+        <a href="/gar_vic_car/3/b/index.php">3b</a>
+        <a href="/gar_vic_car/4/a/index.php">4a</a>
+        <a href="/gar_vic_car/4/b/index.php">4b</a>
+        <a href="/gar_vic_car/4/c/index.php">4c</a>
+        <a href="/gar_vic_car/5/index.html">5</a>
+      </div>
+    </nav>
+    <div class="bg-white w-5/6 border-blue-600 border-4 p-4 mx-auto">
+      <h1 class="text-5xl text-blue-500 text-center pt-5">Ejercicio 5</h1>
+
+      <div class="m-20 shadow-2xl">
+        <h1 class="text-3xl text-blue-900 text-center">
+          a) ¿Qué es un control de versiones? ¿Qué diferencias hay entre uno centralizado y otro distribuido?
+        </h1>
+        <p class="p-10 text-blue-900">
+          Se le llama <span class="text-xl italic font-bold">control de versiones</span> a la gestión de los 
+          diversos cambios que se realizan sobre los elementos de algún producto o una configuración del mismo. Se trata de algo <span class='font-bold'>fundamental y esencial</span> cuando el ciclo del producto es iterativo y vamos a estar trabajando en nuevas versiones del mismo.
+           Una versión, revisión o edición de un producto, 
+          es el estado en el que se encuentra el mismo en un momento dado de su desarrollo o modificación. Vamos a llevar la gestión o control de versiones usando la herramienta <span class="text-xl italic font-bold">Git</span>.<br /><br />
+
+          El control de versiones <span class="text-xl italic font-bold">centralizado</span> utiliza el modelo cliente-servidor, se usará un servidor como repositorio central que funcionará como punto de sincronización. Se trata de una copia maestra de los datos. Estos sistemas, como CVS, Subversion y Perforce, tienen un único servidor que contiene todos los archivos versionados,
+           y varios clientes que descargan los archivos de ese lugar central. Durante muchos años, éste ha sido el estándar para el control de versiones. Si hablamos de sus desventajas la más obvia es el punto único de fallo que representa el servidor centralizado. Si ese servidor se cae durante una hora, entonces durante esa hora nadie puede colaborar o guardar cambios versionados de aquello en que están trabajando. Si el disco duro en el que se encuentra la base de datos central se corrompe, y no se han llevado copias de seguridad adecuadamente, se pierde absolutamente todo, toda la historia del proyecto salvo aquellas instantáneas que la gente pueda tener en sus máquinas locales.
+          
+          <br /><br />
+          En el control de versiones <span class="text-xl italic font-bold">distribuido</span> utilizado un modelo peer-to-peer. Es utilizado por Git, Mercurial, Bazaar o Darcs, los clientes no sólo descargan la última instantánea de los archivos sino que replican completamente el repositorio. Así, si un servidor muere, y estos sistemas estaban colaborando a través de él, cualquiera de los repositorios de los clientes puede copiarse en el servidor para restaurarlo. Cada vez que se descarga una instantánea, en realidad se hace una copia de seguridad completa de todos los datos.
+          Es más, muchos de estos sistemas se las arreglan bastante bien teniendo varios repositorios con los que trabajar, por lo que se puede colaborar con distintos grupos de gente de maneras distintas simultáneamente dentro del mismo proyecto. Esto permite establecer varios tipos de flujos de trabajo que no son posibles en sistemas centralizados, como pueden ser los modelos jerárquicos.
+        </p>
+      </div>
+
+      <div class="m-20 shadow-2xl">
+        <h1 class="text-3xl text-blue-900 text-center">
+          b) ¿Qué es Git? ¿Y GitHub? ¿En qué se diferencian y cómo se relacionan entre sí?
+        </h1>
+        <p class="p-10 text-blue-900">
+          <span class="text-xl italic font-bold"
+            >Git</span
+          >
+          es un software de control de versiones distribuido diseñado por Linus Torvalds, pensando en la eficiencia, la confiabilidad y compatibilidad del mantenimiento de versiones de aplicaciones cuando estas tienen un gran número de archivos de código fuente. Su propósito es llevar registro de los cambios en archivos de computadora incluyendo coordinar el trabajo que varias personas realizan sobre archivos compartidos en un repositorio de código.
+          Al principio, Git se pensó como un motor de bajo nivel sobre el cual otros pudieran escribir la interfaz de usuario o front end como Cogito o StGIT. Sin embargo, Git se ha convertido desde entonces en un sistema de control de versiones con funcionalidad plena.
+          <br /><br />
+          <span class="text-xl italic font-bold"
+            >GitHub</span
+          >
+          es una plataforma de desarrollo colaborativo para alojar proyectos utilizando el sistema de control de versiones Git. Se utiliza principalmente para la creación de código fuente de programas de ordenador. El software que opera GitHub fue escrito en Ruby on Rails. Desde un proyecto de GitHub podremos descargar las releases del proyecto, ver los cambios que han ido haciendo cada colaborador a cada versión, changelogs, etc.
+          <br /><br />
+          <span class="text-xl italic font-bold"
+            >Git y GitHub</span
+          >
+          se diferencian en que Git es el programa para realizar el control de versiones y GitHub es la plataforma que utilizaremos como respositorio. Por lo tanto estarán enlazadas para trabajar conjuntamente.
+        </p>
+      </div>
+
+      <div class="m-20 shadow-2xl">
+        <h1 class="text-3xl text-blue-900 text-center">
+          c) Hazte una cuenta, si no la tienes, en GitHub con un nombre de usuario serio y profesional.
+        </h1>
+        <p class="p-10 text-blue-900">
+          Ya tenía una cuenta de usuario "cgarvic" ya que mi nombre es Carlos García Vicente. <a href="https://github.com/cgarvic" class="text-xl text-blue-600 underline">Perfil GitHub</a>.
+          
+        </p>
+      </div>
+
+      <div class="m-20 shadow-2xl">
+        <h1 class="text-3xl text-blue-900 text-center">
+          d) Crea un proyecto en GitHub de una aplicación web tuya y usa Git para subir el código.
+        </h1>
+        <p class="p-10 text-blue-900">
+          Un <span class="text-xl italic font-bold">servidor web</span> o
+          servidor HTTP es un conjunto de software y de hardware subyacente que
+          acepta peticiones mediante vía HTTP o HTTP seguro (HTTPS). Básicamente
+          funciona de la siguiente manera, en primer lugar un navegador web
+          inicia la comunicación mediante una petición a una página web u otro
+          recurso usando el protocolo de red HTTP y el servidor responde con
+          contenido o un mensaje de error (p.ej error 404).
+          
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
