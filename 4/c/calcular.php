@@ -63,7 +63,7 @@ if ($error === 0) {
             <?php if ($error === 0) {
             ?>
                 <p class='m-3 text-2xl text-center'>Resultados:</p>
-                <h1 class='text-xl text-center pb-3'>Su IMC es igual a <?= $f ?> y su TMB es de <?= $e ?> kcal por día.</h1>
+                <h1 class='text-xl text-center pb-3'>Su índica de masa corporal (IMC) es igual a <?= $f ?> y su tasa metabólica basal (TMB) es de <?= $e ?> kcal por día.</h1>
             <?php } else {
                 echo $error_log;
             } ?>
