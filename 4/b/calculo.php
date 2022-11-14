@@ -25,7 +25,7 @@ if (!empty($_POST['lado']) && filter_var($_POST['lado'], FILTER_VALIDATE_INT, ar
 <body class='bg-red-900'>
     <nav class='flex w-screen'>
         <div class='mx-auto bg-white px-8 py-2 text-center text-xl font-bold space-x-6 rounded-3xl border-4 border-red-700 text-red-900'>
-            <a href='/gar_vic_car/1/index.html'>1</a> <a href='/gar_vic_car/2/index.html'>2</a> <a href='/gar_vic_car/3/a/index.php'>3a</a> <a href='/gar_vic_car/3/b/index.php'>3b</a> <a href='/gar_vic_car/4/a/index.php'>4a</a> <a href='/gar_vic_car/4/b/index.php'>4b</a> <a href='/gar_vic_car/4/c/index.php'>4c</a> <a href='/gar_vic_car/5/index.html'>5</a>
+            <a href='/gar_vic_c/1/index.html'>1</a> <a href='/gar_vic_c/2/index.html'>2</a> <a href='/gar_vic_c/3/a/index.php'>3a</a> <a href='/gar_vic_c/3/b/index.php'>3b</a> <a href='/gar_vic_c/4/a/index.php'>4a</a> <a href='/gar_vic_c/4/b/index.php'>4b</a> <a href='/gar_vic_c/4/c/index.php'>4c</a> <a href='/gar_vic_c/5/index.html'>5</a>
         </div>
     </nav>
     <div class='flex h-screen'>
@@ -42,4 +42,5 @@ if (!empty($_POST['lado']) && filter_var($_POST['lado'], FILTER_VALIDATE_INT, ar
         </div>
     </div>
 </body>
+
 </html>
